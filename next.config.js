@@ -5,7 +5,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "links.papareact.com",
+        hostname: "**",
         port: "",
         // pathname: "/image/upload/**",
       },
