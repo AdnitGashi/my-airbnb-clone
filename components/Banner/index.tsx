@@ -7,7 +7,8 @@ const Banner = () => {
   return (
     <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 2xl:h-700px">
       <Image
-        src="/../public/airbnb-banner-picture.png"
+        src="https://links.papareact.com/0fm"
+
         fill
         style={{ objectFit: "cover" }}
         alt="airbnb banner"

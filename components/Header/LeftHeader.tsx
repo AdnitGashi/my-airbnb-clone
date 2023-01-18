@@ -6,7 +6,7 @@ const LeftHeader = (props:object)=> {
     <div className='relative flex items-center h-10 cursor-pointer my-auto'>
         <Image 
             alt='foto'  
-            src='/../public/airbnb-logo.png'
+            src="https://links.papareact.com/qd3"
             fill
             style={{objectFit:"contain", objectPosition:"left"}}
         />

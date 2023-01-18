@@ -12,7 +12,8 @@ const LargeCard = ({  title, description, buttonText }: Props) => {
     <section className="relative py-16 cursor-pointer">
       <div className="relative h-96 min-w-[300px]">
         <Image
-          src="/../public/LargeCardImg.png"
+          src="https://links.papareact.com/4cj"
+
           style={{ objectFit: "cover" }}
           alt={img}
           fill
