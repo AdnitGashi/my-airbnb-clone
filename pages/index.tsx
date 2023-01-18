@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Explore from "../components/Explore";
+import Footer from "../components/Footer";
 
 export default function Home({ exploreData, cardsData }: any) {
   return (
@@ -15,6 +16,8 @@ export default function Home({ exploreData, cardsData }: any) {
         <section className="pt-5">
           <Explore exploreData={exploreData} cardsData={cardsData}/>
         </section>
+
+          <Footer />
         
       </main>
     </>
