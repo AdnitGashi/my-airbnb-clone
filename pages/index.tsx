@@ -7,7 +7,7 @@ export default function Home({ exploreData, cardsData }: any) {
   return (
     <>
       <Head>
-        <title>test repo access</title>
+        <title>My Airbnb Clone</title>
       </Head>
       <Header />
       <Banner />
