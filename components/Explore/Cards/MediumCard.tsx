@@ -5,7 +5,7 @@ type Props = {
   title: string;
 };
 const MediumCard = ({ img, title }: Props) => {
-  console.log(img, title);
+  console.log('hahahhahahha')
   return (
     <div className="cursor-pointer hover:scale-105 transform transition duration-300 ease-out">
       <div className="relative w-80 h-80">
