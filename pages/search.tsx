@@ -5,11 +5,24 @@ import { useRouter } from "next/router";
 import { format } from "date-fns";
 import InfoCard from "../components/Search/InfoCard";
 
+type Props = {
+  img: string;
+  location: string;
+  title: string;
+  description: string;
+  star: string;
+  price: string;
+  total: string;
+};
+
 const Search = ({ searchResults }: any) => {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuests } = router.query;
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
+  const formattedStartDate = format(
+    new Date(startDate as string),
+    "dd MMMM yy"
+  );
+  const formattedEndDate = format(new Date(endDate as string), "dd MMMM yy");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
   return (
     <div>
@@ -32,7 +45,15 @@ const Search = ({ searchResults }: any) => {
           </div>
           <div className="flex flex-col">
             {searchResults.map(
-              ({ img, location, title, description, star, price, total }) => (
+              ({
+                img,
+                location,
+                title,
+                description,
+                star,
+                price,
+                total,
+              }: Props) => (
                 <InfoCard
                   key={img}
                   img={img}

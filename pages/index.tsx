@@ -10,7 +10,7 @@ export default function Home({ exploreData, cardsData }: any) {
       <Head>
         <title>My Airbnb Clone</title>
       </Head>
-      <Header />
+      <Header placeHolder={null} />
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-5">

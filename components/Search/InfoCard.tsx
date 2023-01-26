@@ -2,6 +2,15 @@ import Image from "next/image";
 import React from "react";
 import { HeartIcon } from "@heroicons/react/20/solid";
 import { StarIcon } from "@heroicons/react/20/solid";
+type Props = {
+  img: string;
+  location: string;
+  title: string;
+  description: string;
+  star: string;
+  price: string;
+  total: string;
+};
 
 const InfoCard = ({
   img,
@@ -11,7 +20,7 @@ const InfoCard = ({
   star,
   price,
   total,
-}) => {
+}: Props) => {
   return (
     <div
       className="flex py-7 px-2 pr-4  border-b cursor-pointer hover:opacity-80 hover:shadow-lg
@@ -20,6 +29,7 @@ const InfoCard = ({
     >
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0 ">
         <Image
+          alt="img"
           src={img}
           fill
           style={{ objectFit: "cover" }}

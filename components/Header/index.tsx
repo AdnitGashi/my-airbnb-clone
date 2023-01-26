@@ -14,10 +14,10 @@ type DateProps = {
   selection: any;
 };
 type Props = {
-  placeHolder: string;
+  placeHolder: string | null;
 };
 
-const Header = ({ placeHolder }: Props) => {
+const Header = ({ placeHolder = null }: Props) => {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
@@ -36,7 +36,7 @@ const Header = ({ placeHolder }: Props) => {
     setSearchInput(value);
   };
 
-  const handleSelect = ({ selection: { endDate, startDate } }: DateProps) => {
+  const handleSelect = ({ selection: { endDate, startDate } }: any) => {
     setStartDate(startDate);
     setEndDate(endDate);
   };

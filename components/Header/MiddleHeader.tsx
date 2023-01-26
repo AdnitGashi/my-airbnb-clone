@@ -4,7 +4,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 type Props = {
   searchInput: string;
   onSearchInputChange?: (e: any) => void;
-  placeHolder: string;
+  placeHolder: string | null;
 };
 const MiddleHeader = ({
   searchInput,
