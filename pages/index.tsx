@@ -8,17 +8,16 @@ export default function Home({ exploreData, cardsData }: any) {
   return (
     <>
       <Head>
-        <title>test repo access</title>
+        <title>My Airbnb Clone</title>
       </Head>
       <Header />
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-5">
-          <Explore exploreData={exploreData} cardsData={cardsData}/>
+          <Explore exploreData={exploreData} cardsData={cardsData} />
         </section>
 
-          <Footer />
-        
+        <Footer />
       </main>
     </>
   );
@@ -29,8 +28,8 @@ export async function getStaticProps() {
     (res) => res.json()
   );
 
-  const cardsData = await fetch("https://www.jsonkeeper.com/b/VHHT").then((res) =>
-    res.json()
+  const cardsData = await fetch("https://www.jsonkeeper.com/b/VHHT").then(
+    (res) => res.json()
   );
 
   return {
